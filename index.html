@@ -1,47 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monarca Page</title>
-  <style>
-    body {
-      background-image: url('resources|/images/mon.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
+<meta charset="UTF-8">
+<title>Monarca Industries</title>
 
-    .links {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0d0d0d;
+    color: white;
+}
 
-    .links a {
-      text-decoration: none;
-      color: white;
-      margin-right: 15px;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 5px 10px;
-      background: rgba(0,0,0,0.4); /* Fondo semi-transparente para mejor legibilidad */
-      border-radius: 5px;
-    }
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    .links a:hover {
-      background: rgba(0,0,0,0.7);
-    }
-  </style>
+.hero img {
+    width: 200px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Segunda fila centrada */
+.grid-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* RECTÁNGULOS */
+.card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGEN DENTRO */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.card-content {
+    padding: 15px;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #aaa;
+}
+</style>
+
 </head>
+
 <body>
-  <div class="links">
-    <a href="https://github.com/tu-usuario/tu-repo" target="_blank">GitHub</a>
-    <a href="https://tu-usuario.github.io/page/" target="_blank">Page</a>
-  </div>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="logo.png" alt="Logo Monarca">
+    <h1>Bienvenidos a Monarca Industries</h1>
+</div>
+
+<!-- GRID PRINCIPAL -->
+<div class="grid">
+
+    <!-- TIMONARCA -->
+    <div class="card" onclick="location.href='timonarca.html'">
+        <img src="IMAGEN_AQUI.jpg">
+        <div class="card-content">
+            <h2>Timonarca</h2>
+            <p>División de videojuegos donde la creatividad cobra vida.</p>
+        </div>
+    </div>
+
+    <!-- INDUSTRIES -->
+    <div class="card">
+        <img src="IMAGEN_AQUI.jpg">
+        <div class="card-content">
+            <h2>Monarca Industries</h2>
+            <p>Centro general de innovación y proyectos.</p>
+        </div>
+    </div>
+
+    <!-- EVIL -->
+    <div class="card">
+        <img src="IMAGEN_AQUI.jpg">
+        <div class="card-content">
+            <h2>Monarca Evil</h2>
+            <p>Proyectos oscuros y narrativas intensas.</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- SEGUNDA FILA -->
+<div class="grid-bottom">
+
+    <div class="card">
+        <img src="IMAGEN_AQUI.jpg">
+        <div class="card-content">
+            <h2>Monarca Music</h2>
+            <p>Producción musical y ambientación sonora.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="IMAGEN_AQUI.jpg">
+        <div class="card-content">
+            <h2>Monarca Productions</h2>
+            <p>Producción audiovisual y contenido.</p>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
