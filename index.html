@@ -15,23 +15,24 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background-color: #0d0d0d;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+/* LOGO GRANDE */
 .hero img {
-    width: 300px; /* puedes cambiar 300 por 400 o 500 */
+    width: 40%;
+    max-width: 500px;
     margin-bottom: 20px;
 }
-<div class="hero">
-    <img src="resources/images/mon.png" alt="Logo Monarca">
-    <h1>Bienvenidos a Monarca Industries</h1>
-</div>
 
+/* TEXTO */
+.hero h1 {
+    font-size: 40px;
 }
+
 /* GRID */
 .grid {
     display: grid;
@@ -40,7 +41,7 @@ body {
     padding: 50px;
 }
 
-/* Segunda fila centrada */
+/* SEGUNDA FILA */
 .grid-bottom {
     display: flex;
     justify-content: center;
@@ -48,7 +49,7 @@ body {
     padding-bottom: 50px;
 }
 
-/* RECTÁNGULOS */
+/* CARDS */
 .card {
     background: #1a1a1a;
     border-radius: 15px;
@@ -61,14 +62,14 @@ body {
     transform: scale(1.05);
 }
 
-/* IMAGEN DENTRO */
+/* IMÁGENES CARDS */
 .card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-/* TEXTO */
+/* TEXTO CARDS */
 .card-content {
     padding: 15px;
 }
@@ -93,10 +94,9 @@ body {
     <h1>Bienvenidos a Monarca Industries</h1>
 </div>
 
-<!-- GRID PRINCIPAL -->
+<!-- GRID -->
 <div class="grid">
 
-    <!-- TIMONARCA -->
     <div class="card" onclick="location.href='teammonarca.html'">
         <img src="resources/images/team.jpg">
         <div class="card-content">
@@ -105,7 +105,6 @@ body {
         </div>
     </div>
 
-    <!-- INDUSTRIES -->
     <div class="card">
         <img src="resources/images/mon.png">
         <div class="card-content">
@@ -114,18 +113,16 @@ body {
         </div>
     </div>
 
-    <!-- EVIL -->
     <div class="card">
         <img src="resources/images/eve.png">
         <div class="card-content">
             <h2>Monarca Events</h2>
-            <p>Division de esperiencias unicas.</p>
+            <p>División de experiencias únicas.</p>
         </div>
     </div>
 
 </div>
 
-<!-- SEGUNDA FILA -->
 <div class="grid-bottom">
 
     <div class="card">
