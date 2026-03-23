@@ -15,20 +15,41 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
+    background-image: url("resources/images/mon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    text-align: center;
+    <div class="hero">
+    <h1>Bienvenidos a Monarca Industries</h1>
+</div>
+
+.hero h1 {
+    font-size: 50px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 }
 
-.hero img {
-    width: 200px;
+.hero {
+    position: relative;
 }
 
 .hero h1 {
-    font-size: 40px;
+    position: relative;
+    z-index: 1;
 }
-
 /* GRID */
 .grid {
     display: grid;
